@@ -29,8 +29,8 @@ Follow these steps to set up the environment and dependencies:
    Clone this repository to your local machine using:
 
    ```shell
-    git clone https://github.com/eliasjacob/imd0187.git
-    cd imd0187
+    git clone https://github.com/eliasjacob/imd0187-residencia_dpe.git
+    cd imd0187-residencia_dpe
     ```
 
 2. **Run the Download Script:**
