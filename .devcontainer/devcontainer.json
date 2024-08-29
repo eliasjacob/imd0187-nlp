@@ -11,15 +11,15 @@
 			"installDirectlyFromGitHubRelease": true,
 			"version": "latest"
 		},
-		"ghcr.io/devcontainers/features/nvidia-cuda:1": {
-			"installCudnn": true,
-			"installCudnnDev": true,
-			"installNvtx": true,
-			"installToolkit": true,
-			"cudaVersion": "12.2",
-			"cudnnVersion": "8.9.5.29"
-		},
-		"ghcr.io/iterative/features/nvtop:1": {},
+		// "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+		// 	"installCudnn": true,
+		// 	"installCudnnDev": true,
+		// 	"installNvtx": true,
+		// 	"installToolkit": true,
+		// 	"cudaVersion": "12.2",
+		// 	"cudnnVersion": "8.9.5.29"
+		// },
+		// "ghcr.io/iterative/features/nvtop:1": {},
 		"ghcr.io/rocker-org/devcontainer-features/miniforge:1": {
 			"version": "latest",
 			"variant": "Mambaforge"
