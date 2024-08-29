@@ -70,6 +70,28 @@ Follow these steps to set up the environment and dependencies:
     wandb login
     ```
 
+## Using VS Code Dev Containers
+
+This repository is configured to work with Visual Studio Code Dev Containers, providing a consistent and isolated development environment. To use this feature:
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/) and the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
+
+2. Clone this repository to your local machine (if you haven't already):
+
+   ```shell
+   git clone https://github.com/eliasjacob/dell_deep_learning_genai.git
+   ```
+
+3. Open the cloned repository in VS Code.
+
+4. When prompted, click "Reopen in Container" or use the command palette (F1) and select "Remote-Containers: Reopen in Container".
+
+5. VS Code will build the Docker container and set up the development environment. This may take a few minutes the first time.
+
+6. Once the container is built, you'll have a fully configured environment with all the necessary dependencies installed.
+
+Using Dev Containers ensures that all course participants have the same development environment, regardless of their local setup. It also makes it easier to manage dependencies and avoid conflicts with other projects.
+
 ## Getting Started
 
 Once the environment is set up, you can start exploring the course materials, running code examples, and working on the practical exercises.
