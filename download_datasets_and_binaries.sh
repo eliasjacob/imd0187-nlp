@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define URLs
-URL1="https://public.jacob.al/imd0187-residencia_dpe/binaries.zip"
+URL1="https://public.jacob.al/imd0187-nlp/binaries.zip"
 
 # Define output file names
 OUTPUT1="binaries.zip"

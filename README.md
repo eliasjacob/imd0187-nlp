@@ -42,27 +42,33 @@ Follow these steps to set up the environment and dependencies:
 
 1. **Download the Repository**:
     ```shell
-    git clone https://github.com/eliasjacob/imd0187-residencia_dpe.git
-    cd imd0187-residencia_dpe
+    git clone https://github.com/eliasjacob/imd0187-nlp.git
+    cd imd0187-nlp
     ```
 
-2. **Run the Download Script**:
+2. **Install Dependencies**:
+ - For GPU support:
+    ```shell
+    poetry install --sync -E cuda --with cuda
+    poetry shell
+    ```
+- For CPU-only support:
+    ```shell
+    poetry install --sync -E cpu
+    poetry shell
+    ```
+
+3. **Run the Download Script**:
     ```shell
     bash download_datasets_and_binaries.sh
     ```
 
-3. **Install Ollama**:
+4. **Install Ollama**:
    Download and install Ollama from [here](https://ollama.com/download).
 
-4. **Download LLama 3.1**:
+5. **Download LLama 3.1**:
     ```bash
     ollama pull llama3.1
-    ```
-
-5. **Set Up Conda Environment**:
-    ```bash
-    conda env create -f environment.yml
-    conda activate imd0187
     ```
 
 6. **Authenticate Weights & Biases**:
@@ -77,10 +83,6 @@ This repository is configured to work with Visual Studio Code Dev Containers, pr
 1. Install [Visual Studio Code](https://code.visualstudio.com/) and the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 
 2. Clone this repository to your local machine (if you haven't already):
-
-   ```shell
-   git clone https://github.com/eliasjacob/dell_deep_learning_genai.git
-   ```
 
 3. Open the cloned repository in VS Code.
 
@@ -130,7 +132,7 @@ Your final project will be evaluated based on several criteria:
 
 ### Project Guidelines
 - **Individual Work**: The project must be done individually.
-- **Submission**: Submit a link to a GitHub repo/shared folder with your code, data, and report. Use virtual environments and `requirements.txt` to facilitate running your code.
+- **Submission**: Submit a link to a GitHub repo/shared folder with your code, data, and report. Use virtual environments or `requirements.txt` to facilitate running your code.
 - **Confidential Data**: Be mindful of any confidential data used in your project.
 - **Deadline**: The project will be due 15 days after the end of the course.
 - **Submission Platform**: Submit your project using SIGAA.

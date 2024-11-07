@@ -1,0 +1,77 @@
+[tool.poetry]
+name = "imd0187-nlp"
+version = "0.1.0"
+description = ""
+authors = ["Elias Jacob <elias.jacob@ufrn.br>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+# ===========================================
+# =========== START OF TORCH PART ===========
+torch       = { version = "^2.4", source = "pytorch-cpu", markers = "extra=='cpu' and extra!='cuda'" }
+torchvision = { version = "^0.19", source = "pytorch-cpu", markers = "extra=='cpu' and extra!='cuda'" }
+skorch = "^1.0.0"
+wordcloud = "^1.9.3"
+xgboost = "^2.1.1"
+lightgbm = "^4.5.0"
+scikit-learn = "^1.5.2"
+langgraph = "^0.2.34"
+torchtext = "0.6.0"
+ipykernel = "^6.29.5"
+ipywidgets = "^8.1.5"
+evaluate = "^0.4.3"
+accelerate = "^1.0.0"
+fasttext = "^0.9.3"
+gensim = "^4.3.3"
+nbformat = "^5.10.4"
+nltk = "^3.9.1"
+pyldavis = "^3.4.1"
+spacy = "~3.7.5"
+beautifulsoup4 = "^4.12.3"
+langchain-community = "^0.3.1"
+langchain-experimental = "^0.3.2"
+langchain-chroma = "^0.1.4"
+langchain-huggingface = "^0.1.0"
+langchain-openai = "^0.2.2"
+langchain-anthropic = "^0.2.3"
+langchain-ollama = "^0.2.0"
+pypdf = "^5.0.1"
+scikit-optimize = "^0.10.2"
+ripgrep = "^14.1.0"
+plotly = "^5.24.1"
+plotly-express = "^0.4.1"
+langchain = "^0.3.3"
+bertopic = "^0.16.4"
+datasets = "^3.0.1"
+
+[tool.poetry.group.cuda]
+optional = true
+
+# https://github.com/pytorch/pytorch/blob/main/RELEASE.md#release-compatibility-matrix
+[tool.poetry.group.cuda.dependencies]
+torch       = { version = "^2.4", source = "pytorch-cuda", markers = "extra=='cuda' and extra!='cpu'" }
+torchvision = { version = "^0.19", source = "pytorch-cuda", markers = "extra=='cuda' and extra!='cpu'" }
+
+[tool.poetry.extras]
+cpu  = ["torch", "torchvision"]
+cuda = ["torch", "torchvision"]
+
+[[tool.poetry.source]]
+name     = "pytorch-cuda"
+priority = "explicit"
+url      = "https://download.pytorch.org/whl/cu124"
+
+[[tool.poetry.source]]
+name     = "pytorch-cpu"
+priority = "explicit"
+url      = "https://download.pytorch.org/whl/cpu"
+
+# ============ END OF TORCH PART ============
+# ===========================================
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires      = ["poetry-core"]
