@@ -1,4 +1,4 @@
-# IMD0187 - Natural Language Processing
+# IMD0187 / PPGTIXXXX - Natural Language Processing
 
 ## [Dr. Elias Jacob de Menezes Neto](https://docente.ufrn.br/elias.jacob)
 
